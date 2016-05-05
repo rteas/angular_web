@@ -1,32 +1,46 @@
+<div class="panel panel-default">
+	<div class= "panel-heading">
+		<a href="https://www.github.com/rteas">
+		<img src="http://www.aha.io/assets/integration_logos/github-bb449e0ffbacbcb7f9c703db85b1cf0b.png" height="15%" width="15%">
+		</a>
+	</div>
+</div>
+
 <div class="panel panel-info">
 <div class="panel-heading">
-	<form ng-submit="gitData()">
-		<input ng-value="{{user}}" ng-model=user />
-		<button ng-click="gitData()" class="btn btn-info">Search!</button>
-	</form>
 	<a href="{{profile.html_url}}">
 	<h3>
 		<img src="{{profile.avatar_url}}" height="3%" width="3%">
 		{{profile.login}} (id: {{profile.id}})</h3>
 	</a>
+	<form ng-submit="gitData()">
+		<input ng-value="{{user}}" ng-model=user />
+		<button ng-click="gitData()" class="btn btn-info">Search!</button>
+	</form>
 </div>
   <div class="panel-body">
     <h3>Repos</h3>
      <table class="table">
   <tr>
 	 	<th>Name</th>
-	 	<th>Owner</th>
+	 	<th>Description</th>
 	 	<th>Language</th>
 	</tr>
 
 	 <tr ng-repeat="repo in repos">
-	 	<td><a href="{{repo.html_url}}">{{repo.name}}</a></td>
-	 	<td>{{repo.owner.login}}</td>
-	 	<td>{{repo.language}}</td>
+	 	<td>
+	 		<a href="{{repo.html_url}}">{{repo.name}}</a>
+	 	</td>
+	 	<td>
+	 		{{repo.description}}
+	 	</td>
+	 	<td>
+	 		{{repo.language}}
+	 	</td>
 	 </tr>
 
   </table>
   </div>
 
-  <div class="panel-footer">Panel footer</div>
+  <div class="panel-footer"></div>
 </div>

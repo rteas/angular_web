@@ -14,10 +14,10 @@ angular.module('myApp.view1', ['ngRoute'])
 }])
 
 .controller('View1Ctrl', ['$scope', '$http', function($scope, $http) {
-	$scope.name = "see this";
 
 	$scope.user = "rteas";
 
+	// Get user and repo data from github
 	$scope.gitData = function(){
 		$http.get('https://api.github.com/users/'+$scope.user).
 		then(function(response){
@@ -29,6 +29,7 @@ angular.module('myApp.view1', ['ngRoute'])
 		});
 	}
 
+	// Initialize 
 	$scope.gitData();
 
 }]);
