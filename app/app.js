@@ -4,13 +4,28 @@
 var app = angular.module('myApp', [
   'ngRoute',
   'ui.bootstrap',
-  'myApp.view1',
-  'myApp.view2',
+  'infoControllers',
   'myApp.version',
 ]);
 
-
+// Routes in controllers/routes.js
 app.config(['$routeProvider', function($routeProvider) {
-  $routeProvider.otherwise({redirectTo: '/home'});
+
+$routeProvider.when('/home', {
+    templateUrl: 'templates/home.html'
+  }).
+  when('/about', {
+  	templateUrl: 'templates/about.html'
+  }).
+  when('/resume', {
+  	templateUrl: 'templates/resume.html',
+  	controller: 'resumeCtrl'
+  }).
+  when('/github', {
+  	templateUrl: 'templates/github.html',
+  	controller: 'githubCtrl'
+  })
+  .otherwise({redirectTo: '/home'});
+  
 }]);
 

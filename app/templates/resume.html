@@ -1,5 +1,19 @@
+
 <div>
-	<h1>
-		Resume
-	</h1>
+    <button type="button" class="btn btn-primary" 
+    ng-click="toggleDisplay()">
+        Resume: {{displayMode}} (Click to toggle)
+    </button>
 </div>
+
+<div ng-if="displayMode === 'Online'">
+	<ng-include src="'/partials/resume.html'"></ng-include>
+</div>
+
+<div class ="panel panel-default" ng-if="displayMode === 'PDF'">
+	<div class="panel panel-body">
+		<embed ng-if="displayMode === 'PDF'" src="/res/pdf/Resume_Online.pdf" width="100%" height="900" type='application/pdf'>
+	</div>
+</div>
+
+
