@@ -1,6 +1,7 @@
 'use strict';
 
-// Test outline
+// Test outline from angular-seed
+
 describe('myApp.info module', function() {
 
   beforeEach(module('myApp.info'));
