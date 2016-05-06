@@ -11,7 +11,7 @@ var app = angular.module('myApp', [
 // Routes in controllers/routes.js
 app.config(['$routeProvider', function($routeProvider) {
 
-$routeProvider.when('/home', {
+$routeProvider.when('/', {
     templateUrl: 'templates/home.html'
   }).
   when('/about', {
@@ -25,7 +25,7 @@ $routeProvider.when('/home', {
   	templateUrl: 'templates/github.html',
   	controller: 'githubCtrl'
   })
-  .otherwise({redirectTo: '/home'});
-  
+  .otherwise({redirectTo: '/'});
+
 }]);
 
