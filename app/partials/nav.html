@@ -1,4 +1,6 @@
 
+<!-- /partials/nav.html -->
+
 <nav class="navbar-fixed-top" role="navigation">
   <div id="custom-bootstrap-menu" class="navbar navbar-default" >
       <div class="container">
@@ -16,16 +18,16 @@
           <div class="collapse navbar-collapse" uib-collapse="navCollapsed">
               <ul class="nav navbar-nav navbar-center">
                   <li ui-sref-active="active">
-                    <a ui-sref="home"><span class="glyphicon glyphicon-home"></span> Home</a>
+                    <a href="#/home"><span class="glyphicon glyphicon-home"></span> Home</a>
                   </li>
                   <li ui-sref-active="active">
-                    <a ui-sref="about"><span class="glyphicon glyphicon-user"></span> About </a>
+                    <a href="#/about" ><span class="glyphicon glyphicon-user"></span> About </a>
                   </li>
-                  <li ui-sref-active="active"> 
-                    <a ui-sref="resume"><span class="glyphicon glyphicon-list-alt"></span> Resume </a>
+                  <li ui-sref-active="#/active"> 
+                    <a href="#/resume"><span class="glyphicon glyphicon-list-alt"></span> Resume </a>
                   </li>
-                  <li ui-sref-active="github">
-                    <a ui-sref="github"><span class="glyphicon glyphicon-console"></span> Github </a>
+                  <li>
+                    <a href="#/github"><span class="glyphicon glyphicon-console"></span> Github </a>
                   </li>
               </ul>
           </div>

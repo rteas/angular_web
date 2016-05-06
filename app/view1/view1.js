@@ -3,13 +3,19 @@
 angular.module('myApp.view1', ['ngRoute'])
 
 .config(['$routeProvider', function($routeProvider) {
-  $routeProvider.when('/view1', {
-    templateUrl: 'view1/view1.html',
+  $routeProvider.when('/home', {
+    templateUrl: 'templates/home.html',
     controller: 'View1Ctrl'
   }).
+  when('/about', {
+  	templateUrl: 'templates/about.html'
+  }).
+  when('/resume', {
+  	templateUrl: 'templates/resume.html'
+  }).
   when('/github', {
-  	templateUrl: 'view1/github.html',
-  	controller: 'gitCtrl'
+  	templateUrl: 'templates/github.html',
+  	controller: 'View1Ctrl'
   });
 }])
 
@@ -26,6 +32,7 @@ angular.module('myApp.view1', ['ngRoute'])
 		$http.get('https://api.github.com/users/'+$scope.user+'/repos').
 		then(function(response){
 			$scope.repos = response.data;
+			$scope.numRepos = repos.length;
 		});
 	}
 
