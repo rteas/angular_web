@@ -105,7 +105,7 @@ infoControllers.controller('resumeCtrl', ['$scope',
 infoControllers.controller('contactCtrl', ['$scope', '$http',
 	function($scope, $http){
 		$scope.message = "Enter a message here!";
-
+		$scope.thanks = "";
 		$scope.sendMessage = function(){
 
 			var url = 'https://richyteas-messages.herokuapp.com/api/messages';
@@ -120,7 +120,14 @@ infoControllers.controller('contactCtrl', ['$scope', '$http',
 
 			$http.post(url, data)
 			.then(function(response){
-				console.log(response);
+				if(response.data.success == true){
+					console.log("yay");
+					$scope.thanks = "Thank you!"
+				}
+				else{
+					console.log("you goofd!!");
+				}
+				
 			});
 			
 			

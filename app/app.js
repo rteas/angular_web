@@ -10,10 +10,8 @@ var myApp = angular.module('myApp', [
 ]);
 
 // Routes in controllers/routes.js
-myApp.config(['$routeProvider', '$httpProvider', function($routeProvider, $httpProvider) {
+myApp.config(['$routeProvider', function($routeProvider, $httpProvider) {
 
-$httpProvider.defaults.useXDomain = true;
-delete $httpProvider.defaults.headers.common['X-Requested-With'];
 
 $routeProvider.when('/', {
     templateUrl: 'templates/home.html'
