@@ -122,7 +122,8 @@ infoControllers.controller('contactCtrl', ['$scope', '$http',
 			.then(function(response){
 				if(response.data.success == true){
 					console.log("yay");
-					$scope.thanks = "Thank you!"
+					$scope.thanks = "Thank you!";
+					$scope.message = "";
 				}
 				else{
 					console.log("you goofd!!");
