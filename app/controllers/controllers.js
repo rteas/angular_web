@@ -6,6 +6,7 @@ infoControllers.controller('githubCtrl', ['$scope', '$http',
 	function($scope, $http) {
 
 		$scope.user = "rteas";
+		$scope.repos = {};
 
 		// Get user and repo data from github
 		$scope.gitData = function(){
@@ -100,3 +101,31 @@ infoControllers.controller('resumeCtrl', ['$scope',
 		}
 		];
 }]);
+
+infoControllers.controller('contactCtrl', ['$scope', '$http',
+	function($scope, $http){
+		$scope.message = "Enter a message here!";
+
+		$scope.sendMessage = function(){
+
+			var url = 'https://richyteas-messages.herokuapp.com/api/messages';
+
+			var data = {
+						"message":{
+							"message": $scope.message,
+							"code": $scope.recaptcha
+						}
+					}
+
+
+			$http.post(url, data)
+			.then(function(response){
+				console.log(response);
+			});
+			
+			
+			console.log("Message: " + $scope.message);
+			console.log("Recapatcha: " + $scope.recaptcha);
+		}
+	}
+]);

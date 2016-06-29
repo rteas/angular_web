@@ -1,15 +1,19 @@
 'use strict';
 
 // Declare app level module which depends on views, and components
-var app = angular.module('myApp', [
+var myApp = angular.module('myApp', [
   'ngRoute',
   'ui.bootstrap',
   'infoControllers',
   'myApp.version',
+  'vcRecaptcha',
 ]);
 
 // Routes in controllers/routes.js
-app.config(['$routeProvider', function($routeProvider) {
+myApp.config(['$routeProvider', '$httpProvider', function($routeProvider, $httpProvider) {
+
+$httpProvider.defaults.useXDomain = true;
+delete $httpProvider.defaults.headers.common['X-Requested-With'];
 
 $routeProvider.when('/', {
     templateUrl: 'templates/home.html'
@@ -25,7 +29,10 @@ $routeProvider.when('/', {
   	templateUrl: 'templates/github.html',
   	controller: 'githubCtrl'
   })
+  .when('/contact', {
+    templateUrl: 'templates/contact.html',
+    controller: 'contactCtrl'
+  })
   .otherwise({redirectTo: '/'});
 
 }]);
-
