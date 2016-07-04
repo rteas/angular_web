@@ -104,7 +104,7 @@ infoControllers.controller('resumeCtrl', ['$scope',
 
 infoControllers.controller('contactCtrl', ['$scope', '$http',
 	function($scope, $http){
-		$scope.message = "Enter a message here!";
+		$scope.message = "";
 		$scope.thanks = "";
 		$scope.sendMessage = function(){
 
