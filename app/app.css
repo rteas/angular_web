@@ -1,4 +1,13 @@
 /* app css stylesheet */
+.image {
+    display: block;
+    text-indent: -1000px; /* hide link text */
+    overflow: hidden;
+    background-size: cover;
+    width: 33%;
+    height: 200px;
+    float: left;
+}
 
 textarea{
     resize: none;
