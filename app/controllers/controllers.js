@@ -121,19 +121,16 @@ infoControllers.controller('contactCtrl', ['$scope', '$http',
 			$http.post(url, data)
 			.then(function(response){
 				if(response.data.success == true){
-					console.log("yay");
 					$scope.thanks = "Thank you!";
 					$scope.message = "";
 				}
 				else{
-					console.log("you goofd!!");
+					$scope.thanks="An error has occurred: Check if the recaptcha is verified.";
 				}
 				
 			});
 			
-			
-			console.log("Message: " + $scope.message);
-			console.log("Recapatcha: " + $scope.recaptcha);
+
 		}
 	}
 ]);
