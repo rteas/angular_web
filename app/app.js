@@ -31,6 +31,9 @@ $routeProvider.when('/', {
     templateUrl: 'templates/contact.html',
     controller: 'contactCtrl'
   })
+  .when('/extra', {
+    templateUrl: 'templates/extra.html'
+  })
   .otherwise({redirectTo: '/'});
 
 }]);
