@@ -143,6 +143,8 @@ infoControllers.controller('contactCtrl', ['$scope', '$http',
 					}
 
 
+			$scope.thanks = "Sending..."
+
 			$http.post(url, data)
 			.then(function(response){
 				if(response.data.success == true){
@@ -150,7 +152,7 @@ infoControllers.controller('contactCtrl', ['$scope', '$http',
 					$scope.message = "";
 				}
 				else{
-					$scope.thanks="An error has occurred: Check if the recaptcha is verified.";
+					$scope.thanks="An error has occurred: Please check if the recaptcha is verified";
 				}
 				
 			});
