@@ -1,24 +1,13 @@
-<div class="panel panel-default">
-	<div class="panel-heading">
-		  <h3>RichyTeas@gmail.com</h3>
-		  <h4>(714) 722-2236</h4>
-	</div>
-  <div class="panel-body">
-	<div class ="panel panel-primary">
-		<div class="panel-heading">
-			<h3>
-			Education: </br>
-			</h3>
-			<h4>Computer Science and Engineering, B.S. (June 2016)</h4>
-			<p> University of California, Irvine</p>
-		</div>
-	</div>
+<style type="text/css">
+  form.tab-form-demo .tab-pane {
+    margin: 20px 20px;
+  }
+</style>
 
-	<div class ="panel panel-primary">
-		<div class="panel-heading">
-			<h3>Work Experience:</h3>
-		</div>
-		<div ng-repeat="work in workData" class ="panel panel-info">
+<div>
+  <uib-tabset type="pills">
+    <uib-tab heading="Work Experience">
+    	<div ng-repeat="work in workData" class ="panel panel-info">
 			<div class="panel-heading">
 				<h4>{{work.title}}:</h4>
 			</div>
@@ -29,13 +18,9 @@
 				<p>Duration: {{work.duration}}</p>
 			</div>
 		</div>
-	</div>
-
-	<div class ="panel panel-primary">
-		<div class="panel-heading">
-			<h3>Projects:</h3>
-		</div>
-		<div ng-repeat="project in projectData" class ="panel panel-info">
+    </uib-tab>
+    <uib-tab heading="Projects">
+    	<div ng-repeat="project in projectData" class ="panel panel-info">
 			<div class="panel-heading">
 				<h4>{{project.name}}:</h4>
 			</div>
@@ -43,13 +28,9 @@
 				<p ng-repeat="task in project.tasks">&rarr;{{task}}</p>
 			</div>
 		</div>
-	</div>
-
-	<div class ="panel panel-primary">
-		<div class="panel-heading">
-			<h3>Skills and Experience:</h3>
-		</div>
-		<div ng-repeat="lang in langData" class ="panel panel-info">
+    </uib-tab>
+    <uib-tab heading="Skills & Experience">
+    	<div ng-repeat="lang in langData" class ="panel panel-info">
 			<div class="panel-heading">
 				<h4>{{lang.name}}:</h4>
 			</div>
@@ -57,23 +38,23 @@
 				<p ng-repeat="task in lang.tasks">&rarr;{{task}}</p>
 			</div>
 		</div>
-	</div>
-
-
-	
-
-
-	<!-- Template for more?
-	<div class ="row">
-		<div class="col-md-4">
+    </uib-tab>
+    <uib-tab heading="Education">
+    	<div class="panel-heading">
+			<h4>Computer Science and Engineering, B.S. (June 2016)</h4>
+			<p> University of California, Irvine</p>
 		</div>
-		<div class="col-md-4">
+    </uib-tab>
+    <uib-tab heading="Contact">
+    	<div class="panel-heading">
+		  <h4>RichyTeas@gmail.com</h4>
+		  <p>(714) 722-2236</p>
 		</div>
-		<div class="col-md-4">
-		</div>
-	</div>
-	-->
-  </div>
+    </uib-tab>
+  </uib-tabset>
+
+  <hr />
+
 </div>
 
 
