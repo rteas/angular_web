@@ -30,7 +30,9 @@ p {
     float: left;
 }
 
-
+.important{
+    color: steelblue;
+}
 
 textarea{
     resize: none;
