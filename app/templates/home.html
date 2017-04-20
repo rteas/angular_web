@@ -19,7 +19,7 @@
 				  <div style="height: 320px">
 				    <div uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
 				      <div uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id">
-				        <img ng-src="{{slide.image}}" style="margin:auto; height: 300px">
+				        <img ng-src="{{slide.image}}" style="margin:auto; height: 300px; width:100%;">
 				        <p style="text-align: bottom-center;">{{slide.text}}</p>
 				      </div>
 				    </div>
