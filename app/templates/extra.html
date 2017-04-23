@@ -1,75 +1,87 @@
 <section>
 
-		<h1>Game: Blastemy (prototype)</h1>
+		<h1>Game: Blastemy </h1>
 
 
 		  <uib-tabset active="active">
 		    
 
 		    <uib-tab index="0" heading="Introduction">
-		    	<p>Play as a pilot on a mission to intercept a monster invasion!</p>
-				<p>Swiftly dodge enemies and their bullets while launching attacks of your own! </p>
-				<p>Get cool power ups and complete your mission by defeating the boss!</p>
-				<hr/>
-				<h4> Updates: </h4>
-				<p> Fixed screen scaling issue</p>
-				<p> Adding esc key, updating instructions</p>
-				<p> Added versions for multi-OS support</p>
-				<p> Lowered difficulty by allowing shooting during invincible period after respawn</p>
-				<p> Please let me know (via message) if there are any issues!</p>
+		    	<div class="tab-data">
+			    	<p>Play as a pilot on a mission to intercept a monster invasion!</p>
+					<p>Swiftly dodge enemies and their bullets while launching attacks of your own! </p>
+					<p>Get cool power ups and complete your mission by defeating the boss!</p>
+					<hr/>
+					<h4> Updates: </h4>
+					<p> Fixed screen scaling issue</p>
+					<p> Adding esc key, updating instructions</p>
+					<p> Added versions for multi-OS support</p>
+					<p> Lowered difficulty by allowing shooting during invincible period after respawn</p>
+					<p> Please <a href="#/contact">let me know</a> if there are any issues!</p>
+				</div>
 		    </uib-tab>
 		    <uib-tab index="1" heading="Screenshots">
-		    	<div class = "row">
-		    	<div class="col-md-6">
-		    		<img src="/res/img/gameplay.JPG" class="img-responsive" />
-		    	</div>
-		    	<div class="col-md-6">
-		    		<p> TODO: Image gallery selection here (coming soon! really!)</p>
-		    	</div>
+		    	<div class="tab-data">
+			    	<div class = "row">
+				    	<div class="col-md-6">
+				    		<img id="main_ss" class="img-rounding" src="/res/img/blastemy_ss1.JPG" style="height:50%; width:95%;" />
+				    	</div>
+				    	<div class="col-md-6">
+				    		<!-- TODO: OPTIMIZED FIX WITH ANGULAR.JS-->
+				    		<img src="/res/img/blastemy_ss1.JPG" class="img-rounding" onclick="getElementById('main_ss').setAttribute('src', '/res/img/blastemy_ss1.JPG')" style="height:12.5%;width:30%;" />
+				    		<img src="/res/img/blastemy_ss2.JPG" class="img-rounding" onclick="getElementById('main_ss').setAttribute('src', '/res/img/blastemy_ss2.JPG')" style="height:12.5%;width:30%;" />
+				    		<img src="/res/img/blastemy_ss4.JPG" class="img-rounding" onclick="getElementById('main_ss').setAttribute('src', '/res/img/blastemy_ss4.JPG')" style="height:12.5%;width:30%;" />
+				    	</div>
+
+			    	</div>
 		    	</div>
 				
 		    </uib-tab>
 
 		    <uib-tab index="2" heading="Controls">
-				<div class="row">
-				  <div class="col-md-9 col-md-push-3">Z / Mouse1</div>
-				  <div class="col-md-3 col-md-pull-9">Primary Fire</div>
-				</div>
-				<div class="row">
-				  <div class="col-md-9 col-md-push-3">X / Mouse2</div>
-				  <div class="col-md-3 col-md-pull-9">Secondary Fire</div>
-				</div>
-				<div class="row">
-				  <div class="col-md-9 col-md-push-3">Arrow Keys / WASD</div>
-				  <div class="col-md-3 col-md-pull-9">Move</div>
-				</div>
-				<div class="row">
-				  <div class="col-md-9 col-md-push-3">C / Q</div>
-				  <div class="col-md-3 col-md-pull-9">Change Weapons</div>
-				</div>
-				<div class="row">
-				  <div class="col-md-9 col-md-push-3">Space</div>
-				  <div class="col-md-3 col-md-pull-9">Pasue</div>
-				</div>
-				<div class="row">
-				  <div class="col-md-9 col-md-push-3">Esc</div>
-				  <div class="col-md-3 col-md-pull-9">Quit</div>
+		    	<div class="tab-data">
+					<div class="row">
+					  <div class="col-md-9 col-md-push-3">Z / Mouse1</div>
+					  <div class="col-md-3 col-md-pull-9">Primary Fire</div>
+					</div>
+					<div class="row">
+					  <div class="col-md-9 col-md-push-3">X / Mouse2</div>
+					  <div class="col-md-3 col-md-pull-9">Secondary Fire</div>
+					</div>
+					<div class="row">
+					  <div class="col-md-9 col-md-push-3">Arrow Keys / WASD</div>
+					  <div class="col-md-3 col-md-pull-9">Move</div>
+					</div>
+					<div class="row">
+					  <div class="col-md-9 col-md-push-3">C / Q</div>
+					  <div class="col-md-3 col-md-pull-9">Change Weapons</div>
+					</div>
+					<div class="row">
+					  <div class="col-md-9 col-md-push-3">Space</div>
+					  <div class="col-md-3 col-md-pull-9">Pasue</div>
+					</div>
+					<div class="row">
+					  <div class="col-md-9 col-md-push-3">Esc</div>
+					  <div class="col-md-3 col-md-pull-9">Quit</div>
+					</div>
 				</div>
 		    </uib-tab>
 		    
 		    <uib-tab index="3" heading="Download">
-		    	<span class="glyphicon glyphicon-circle-arrow-down"></span> Windows: 
-				<a href="https://drive.google.com/open?id=0B2nW-xXF_lS0VlI2SWxmeHItQjQ"> 32-bit </a> / 
-				<a href="https://drive.google.com/open?id=0B2nW-xXF_lS0YlZQaUtVYmdSNnM"> 64-bit</a> 
-				<br> 
-				<span class="glyphicon glyphicon-circle-arrow-down"></span> Mac OSX: 
-				<a href="https://drive.google.com/open?id=0B2nW-xXF_lS0Z2xkVEVBQjdjSGs"> 32-bit </a> / 
-				<a href="https://drive.google.com/open?id=0B2nW-xXF_lS0SVREN3dXcGJfbUk"> 64-bit</a> 
-				<br> 
-				<span class="glyphicon glyphicon-circle-arrow-down"></span> Linux: 
-				<a href="https://drive.google.com/open?id=0B2nW-xXF_lS0M1hRLUhPQW1ZWmM"> 32-bit </a> / 
-				<a href="https://drive.google.com/open?id=0B2nW-xXF_lS0TmxtbzV5Vml5cnM"> 64-bit</a> 
-				<br> 
+		    	<div class="tab-data">
+			    	<span class="glyphicon glyphicon-circle-arrow-down"></span> Windows: 
+					<a href="https://drive.google.com/open?id=0B2nW-xXF_lS0VlI2SWxmeHItQjQ"> 32-bit </a> / 
+					<a href="https://drive.google.com/open?id=0B2nW-xXF_lS0YlZQaUtVYmdSNnM"> 64-bit</a> 
+					<br> 
+					<span class="glyphicon glyphicon-circle-arrow-down"></span> Mac OSX: 
+					<a href="https://drive.google.com/open?id=0B2nW-xXF_lS0Z2xkVEVBQjdjSGs"> 32-bit </a> / 
+					<a href="https://drive.google.com/open?id=0B2nW-xXF_lS0SVREN3dXcGJfbUk"> 64-bit</a> 
+					<br> 
+					<span class="glyphicon glyphicon-circle-arrow-down"></span> Linux: 
+					<a href="https://drive.google.com/open?id=0B2nW-xXF_lS0M1hRLUhPQW1ZWmM"> 32-bit </a> / 
+					<a href="https://drive.google.com/open?id=0B2nW-xXF_lS0TmxtbzV5Vml5cnM"> 64-bit</a> 
+					<br> 
+				</div>
 		    </uib-tab>
 		    <!--uib-tab index="$index" ng-repeat="tab in tabs" heading="{{tab.title}}" disable="tab.disabled">
 		      {{tab.content}}

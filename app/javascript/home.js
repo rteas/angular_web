@@ -6,3 +6,9 @@ $( document ).ready(function() {
     });
 });
 */
+
+	function changeMainImg(){
+		var curImg = $('#main_ss');
+		curImg.setAttribute('src', '/res/img/blastemy_ss2.JPG');
+	};
+	

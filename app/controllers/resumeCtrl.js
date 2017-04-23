@@ -5,7 +5,7 @@ resumeCtrl.controller('resumeCtrl', ['$scope',
 	function($scope, $window){
 
 		$scope.displayMode = "Online";
-
+		/*
 		$scope.toggleDisplay = function(){
 			if($scope.displayMode === "Online"){
 				$scope.displayMode = "PDF";
@@ -14,7 +14,7 @@ resumeCtrl.controller('resumeCtrl', ['$scope',
 				$scope.displayMode = "Online"
 			}
 		}
-
+		*/
 		$scope.langData = [
 			{
 				'name': 'Java',
@@ -86,16 +86,25 @@ resumeCtrl.controller('resumeCtrl', ['$scope',
 				'title': 'Programmer Analyst - DXC (Formerly CSC)',
 				'duration': 'January 2017 - Current',
 				'tasks': [
-				'Assisted in refactoring queries PLSQL to reduce query times by 90%',
-				'Fixed front end web displays with javascript',
-				'Assisted users to maintain software functionality'
+					'Assisted in refactoring queries PLSQL to reduce query times by 90%',
+					'Fixed front end web displays with javascript',
+					'Troubleshot and maintained software functionalities'
+				]
+			},
+			{
+				'title': 'Software Developer Intern - Kappboom Inc.',
+				'duration': 'July 2014 - September 2014',
+				'tasks': [
+					'Wrote backend software with Ruby/Rails to expose RESTful APIs to application clients',
+					'Developed Android applications with Java, interfacing with web apps',
+					'Worked with Linux, Angular.js, Node.js, jQuery, HTML, and CSS'
 				]
 			},
 			{
 				'title': 'Private Tutor',
 				'duration': 'June 2013 - September 2013',
 				'tasks': [
-				'Tutored intro to Java and C++ to community college students'
+					'Tutored intro to Java and C++ to community college students'
 				]	
 			}
 		];
