@@ -77,7 +77,7 @@ resumeCtrl.controller('resumeCtrl', ['$scope',
 
 		$scope.workData = [
 			{
-				'title': 'Programmer Analyst - DXC (Formerly CSC)',
+				'title': 'Programmer Analyst - DXC',
 				'duration': 'January 2017 - Current',
 				'tasks': [
 					'Assisted in refactoring and optimizing queries with PLSQL',
