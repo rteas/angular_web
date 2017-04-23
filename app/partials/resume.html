@@ -15,7 +15,9 @@
 				<h4>{{work.title}}:</h4>
 			</div>
 			<div class="panel-body">
-				<p ng-repeat="task in work.tasks">&rarr;{{task}}</p>
+				<ul>
+					<li ng-repeat="task in work.tasks">{{task}}</p>
+				</ul>
 			</div>
 			<div class="panel-footer">
 				<p>Duration: {{work.duration}}</p>
@@ -28,7 +30,9 @@
 				<h4>{{project.name}}:</h4>
 			</div>
 			<div class="panel-body">
-				<p ng-repeat="task in project.tasks">&rarr;{{task}}</p>
+				<ul>
+					<li ng-repeat="task in project.tasks">{{task}}</p>
+				</ul>
 			</div>
 		</div>
     </uib-tab>
@@ -38,7 +42,9 @@
 				<h4>{{lang.name}}:</h4>
 			</div>
 			<div class="panel-body">
-				<p ng-repeat="task in lang.tasks">&rarr;{{task}}</p>
+				<ul>
+					<li ng-repeat="task in lang.tasks">{{task}}</p>
+				</ul>
 			</div>
 		</div>
     </uib-tab>
