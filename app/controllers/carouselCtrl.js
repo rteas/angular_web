@@ -30,7 +30,7 @@ CarouselDemoCtrl.controller('CarouselDemoCtrl', function ($scope) {
 
   slides.push({
       image: 'https://s16-us2.ixquick.com/cgi-bin/serveimage?url=http:%2F%2Fwww.vizteams.com%2Fwp-content%2Fuploads%2F2013%2F05%2Fruby-on-rails.jpg&sp=c5083320587476c6af8750682a74c3be',
-      text: 'Second Back End with CORS (see messages page)',
+      text: 'Server handling messages',
       id: currIndex++
     });
 

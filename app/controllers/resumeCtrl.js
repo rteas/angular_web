@@ -24,12 +24,6 @@ resumeCtrl.controller('resumeCtrl', ['$scope',
 				]
 			},
 			{
-				'name': 'Ruby/Rails',
-				'tasks': [
-					'Developed mock-up twitter website and used front-end web languages such as jQuery and JavaScript'
-				]
-			},
-			{
 				'name': 'C# & ASP.NET',
 				'tasks': [
 					'Developed ASP MVC application to manage patient medical data with Entity Framework 6 in Visual Studio']
@@ -86,9 +80,8 @@ resumeCtrl.controller('resumeCtrl', ['$scope',
 				'title': 'Programmer Analyst - DXC (Formerly CSC)',
 				'duration': 'January 2017 - Current',
 				'tasks': [
-					'Assisted in refactoring queries PLSQL to reduce query times by 90%',
-					'Fixed front end web displays with javascript',
-					'Troubleshot and maintained software functionalities'
+					'Assisted in refactoring and optimizing queries with PLSQL',
+					'Fixed front end web displays with JavaScript',
 				]
 			},
 			{
