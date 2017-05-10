@@ -3,13 +3,14 @@
 // Declare app level module which depends on views, and components
 var myApp = angular.module('myApp', [
   'ngRoute',
-  'CarouselDemoCtrl',
   'ui.bootstrap',
-  'infoControllers',
   'myApp.version',
   'vcRecaptcha',
   'extraCtrl',
-  'resumeCtrl'
+  'resumeCtrl',
+  'contactCtrl',
+  'homeCtrl',
+  'githubCtrl'
 ]);
 
 // Routes in controllers/routes.js
@@ -17,7 +18,8 @@ myApp.config(['$routeProvider', '$locationProvider', function($routeProvider, $l
 $locationProvider.hashPrefix('');
 
 $routeProvider.when('/', {
-    templateUrl: 'templates/home.html'
+    templateUrl: 'templates/home.html',
+    controller: 'homeCtrl'
   }).
   when('/about', {
   	templateUrl: 'templates/about.html'

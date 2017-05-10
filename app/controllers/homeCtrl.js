@@ -1,5 +1,5 @@
-var CarouselDemoCtrl = angular.module('CarouselDemoCtrl', ['ngAnimate', 'ngSanitize', 'ui.bootstrap']);
-CarouselDemoCtrl.controller('CarouselDemoCtrl', function ($scope) {
+var homeCtrl = angular.module('homeCtrl', ['ngAnimate', 'ngSanitize', 'ui.bootstrap']);
+homeCtrl.controller('homeCtrl', function ($scope) {
   $scope.myInterval = 5000;
   $scope.noWrapSlides = false;
   $scope.active = 0;
@@ -7,7 +7,7 @@ CarouselDemoCtrl.controller('CarouselDemoCtrl', function ($scope) {
   var currIndex = 0;
 
   slides.push({
-      image: 'https://d3k90kvix375hb.cloudfront.net/assets/heroku-og-cad174838a49b266550809e29026ec9bc18e056dae8f9cf523ea4237379691f9.png',
+      image: 'https://blog-assets1.herokucdn.com/assets/heroku-og-cad174838a49b266550809e29026ec9bc18e056dae8f9cf523ea4237379691f9.png',
       text: 'Cloud Host Provider',
       id: currIndex++
     });
