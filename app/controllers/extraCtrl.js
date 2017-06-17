@@ -20,4 +20,11 @@ extraCtrl.controller('extraCtrl', function ($scope, $window) {
   $scope.model = {
     name: 'Tabs'
   };
+
+});
+
+extraCtrl.directive('imgChange', function(){
+  return element.bind('change', function() {
+    alert('change on '+ element);
+  });
 });
