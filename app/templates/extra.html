@@ -26,35 +26,33 @@
 				    	<div class="thumbnail col-md-6">
 				    		<img id="main_ss" class="img-rounding" src="/res/img/blastemy_ss1.JPG" style="max-height:300px; width:100%;" />
 				    	</div>
-				    	<!-- TODO: OPTIMIZED FIX WITH ANGULAR.JS-->
-				    	<div class="thumbnail gallery col-md-2 " 
-				    		style="background-color: 'DeepSkyBlue';"
+				    	<!-- TODO: OPTIMIZED FIX WITH ANGULAR.JS
+							Removes selected class from all gallery elements
+							adds selected class to the clicked element
+				    	-->
+				    	<div class="thumbnail gallery selected col-md-2" 
 				    		onclick="
-				    		$('.thumbnail').css('background-color','transparent');
+				    		$('.gallery').removeClass('selected');
 				    		getElementById('main_ss').setAttribute('src', '/res/img/blastemy_ss1.JPG');
-				    		this.style.backgroundColor = 'DeepSkyBlue';
-				    		console.log(this);
+				    		$(this).addClass('selected');
 										" >
 				    		<a href=""><img src="/res/img/blastemy_ss1.JPG" class="img-rounding" 
 				    		
 							style="height:90px;width:100%;" /></a>
 				    	</div>
-
 				    	<div class="thumbnail gallery col-md-2 " onclick="
-				    		$('.thumbnail').css('background-color','transparent');
+				    		$('.gallery').removeClass('selected');
 				    		getElementById('main_ss').setAttribute('src', '/res/img/blastemy_ss2.JPG');
-				    		this.style.backgroundColor = 'DeepSkyBlue';
-				    		console.log(this);
+				    		$(this).addClass('selected');
 										" >
-				    		<a href=""><img src="/res/img/blastemy_ss2.JPG" class="img-rounding" onclick="getElementById('main_ss').setAttribute('src', '/res/img/blastemy_ss2.JPG')" style="height:90px;width:100%;" /></a>
+				    		<a href=""><img src="/res/img/blastemy_ss2.JPG" class="img-rounding" style="height:90px;width:100%;" /></a>
 				    	</div>
 				    	<div class="thumbnail gallery col-md-2" onclick="
-				    		$('.thumbnail').css('background-color','transparent');
+				    		$('.gallery').removeClass('selected');
 				    		getElementById('main_ss').setAttribute('src', '/res/img/blastemy_ss4.JPG');
-				    		this.style.backgroundColor = 'DeepSkyBlue';
-				    		console.log(this);
+				    		$(this).addClass('selected');
 										" >
-				    		<a href=""><img src="/res/img/blastemy_ss4.JPG" class="img-rounding" onclick="getElementById('main_ss').setAttribute('src', '/res/img/blastemy_ss4.JPG')" style="height:90px;width:100%;" /></a>
+				    		<a href=""><img src="/res/img/blastemy_ss4.JPG" class="img-rounding" style="height:90px;width:100%;" /></a>
 				    	</div>
 
 			    	</div>
