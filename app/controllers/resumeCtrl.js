@@ -80,10 +80,10 @@ resumeCtrl.controller('resumeCtrl', ['$scope',
 				'title': 'Programmer Analyst - DXC',
 				'duration': 'January 2017 - Current',
 				'tasks': [
-					'Assisted in refactoring and optimizing queries with PLSQL',
-					'Fixed front end web displays with JavaScript',
 					'Developed java swing application to aid in moving and archiving files',
-					'Augmented VB.NET application to read and create new datasheets with excel'
+					'Augmented VB.NET application to read and create new datasheets with excel',
+					'Assisted in refactoring and optimizing queries with PLSQL',
+					'Fixed front end web displays with JavaScript'
 				]
 			},
 			{
