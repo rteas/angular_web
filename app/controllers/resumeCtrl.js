@@ -82,6 +82,8 @@ resumeCtrl.controller('resumeCtrl', ['$scope',
 				'tasks': [
 					'Assisted in refactoring and optimizing queries with PLSQL',
 					'Fixed front end web displays with JavaScript',
+					'Developed java swing application to aid in moving and archiving files',
+					'Augmented VB.NET application to read and create new datasheets with excel'
 				]
 			},
 			{
