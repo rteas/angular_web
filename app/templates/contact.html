@@ -1,8 +1,11 @@
 <section style="width:65%;">
 <p> You can contact me by email <span class="important">(RichyTeas@gmail.com)</span>, phone <span class="important">(714) 722-2236</span>, or by leaving a <span class="important">message</span> below. </p>
-		<div class="form-group">
-			<form>
-				<textarea class="form-control" placeholder="Leave a message here..." ng-model="message" rows="10" maxlength="1000"></textarea>
+		
+			<form name="contactForm">
+				<input type="text" ng-model = "name" class="form-control has-danger" id = "name" placeholder="Name" maxlength="400" style="width:40%;"/></br>
+				<input type="email" ng-model = "email" [required="false"] class="form-control" placeholder="E-mail" maxlength="400" style="width:40%;"/></br>
+				<p>{{email_message}}</p>
+				<textarea class="form-control" ng-model="message" id="message" placeholder="Message"  rows="10" maxlength="1000" ></textarea> 
 				<p> {{1000-message.length}} characters remaining</p>
 
 				<div
@@ -14,6 +17,7 @@
 				<button ng-click="sendMessage()" class="btn btn-info">Send!</button>
 			</form>		
 			<p>{{thanks}}</p>
-		</div>
+
+
 
 </section>

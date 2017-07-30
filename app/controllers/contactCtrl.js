@@ -7,6 +7,7 @@ contactCtrl.controller('contactCtrl', ['$scope', '$http',
 		$scope.thanks = "";
 		$scope.sendMessage = function(){
 
+
 			var url = 'https://richyteas-messages.herokuapp.com/api/messages';
 
 			var data = {
